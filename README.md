@@ -69,7 +69,7 @@ function setCss(ele, attr, val) {
 
 ```js
 let box = document.getElementById("box");
-tween(box, left, 500);
+tween(box, {left: 500}, 3000;
 ```
 
 让`id`为`box`的元素匀速运动到距离左侧500像素
