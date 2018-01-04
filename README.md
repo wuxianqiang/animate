@@ -10,7 +10,7 @@ $("#box").animate({left: 500}， 3000);
 
 上面是jQuery中的动画方法，那么使用原生JS我们如何封装这样的动画方法呢？
 
-## 开始封装
+#### 开始封装
 
 ```js
 function linear(t, b, c, d) {
@@ -65,11 +65,11 @@ function setCss(ele, attr, val) {
 }
 ```
 
-### 开始使用
+#### 始使用
 
 ```js
 let box = document.getElementById("box");
-tween(box, {left: 500}, 3000;
+tween(box, {left: 500}, 3000);
 ```
 
 让`id`为`box`的元素匀速运动到距离左侧500像素
