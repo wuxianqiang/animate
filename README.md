@@ -17,7 +17,7 @@ function linear(t, b, c, d) {
     return c / d * t + b
 }
 
-function tween(element, target, duration, callback) {
+function animate(element, target, duration, callback) {
     let change = {};
     let begin = {};
     for (let key in target) {
@@ -69,7 +69,7 @@ function setCss(ele, attr, val) {
 
 ```js
 let box = document.getElementById("box");
-tween(box, {left: 500}, 3000);
+animate(box, {left: 500}, 3000);
 ```
 
 让`id`为`box`的元素匀速运动到距离左侧500像素
